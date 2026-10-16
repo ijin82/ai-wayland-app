@@ -1,8 +1,10 @@
 # Яндекс Алиса, Сбер GigaChat и Google Gemini для Linux (GNOME / Wayland)
 
-<img width="256" height="256" alt="alice_512" src="https://github.com/user-attachments/assets/39f9c777-e156-4883-b5e8-adb223dd5000" />
+<img width="200" height="200" alt="alice_512" src="https://github.com/user-attachments/assets/39f9c777-e156-4883-b5e8-adb223dd5000" />
 &nbsp;
-<img width="256" height="256" alt="gigachat_512" src="https://github.com/user-attachments/assets/30b18225-0259-40f8-a462-dce7ce2e0b26" />
+<img width="200" height="200" alt="gigachat_512" src="https://github.com/user-attachments/assets/30b18225-0259-40f8-a462-dce7ce2e0b26" />
+&nbsp;
+<img width="200" height="200" alt="gemini_512" src="https://github.com/user-attachments/assets/b52470aa-f922-47c6-9015-d52e5baf86a6" />
 
 
 > Автономные веб-клиенты для ИИ-помощников **Яндекс Алиса**, **Сбер GigaChat** и **Google Gemini** без фоновых демонов и с нативной интеграцией в GNOME и Wayland.
