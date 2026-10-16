@@ -2,7 +2,7 @@
 Type=Application
 Name=Алиса
 Comment=Алиса как отдельное веб‑приложение
-Exec=alice-window.sh
+Exec=ai-window.sh alice
 Icon=alice_512
 Terminal=false
 Categories=Utility;

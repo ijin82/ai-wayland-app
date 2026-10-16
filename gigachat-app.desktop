@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Gigachat
+Comment=Gigachat как отдельное веб‑приложение
+Exec=ai-window.sh gigachat
+Icon=gigachat_512
+Terminal=false
+Categories=Utility;
+StartupWMClass=chrome-giga.chat__-Default

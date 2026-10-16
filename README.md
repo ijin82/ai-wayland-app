@@ -153,16 +153,16 @@ chrome-ya.ru__alice-Default
 Чтобы удалить ярлык и иконку из системы:
 
 ```bash
-rm -f ~/.bin/alice-window.sh
-rm -f ~/.local/share/applications/alice-app.desktop
-rm -f ~/.local/share/icons/hicolor/512x512/apps/alice_512.png
-rm -f ~/.local/share/icons/hicolor/512x512/apps/chrome-ya.ru__alice-Default.png
-gtk-update-icon-cache ~/.local/share/icons/hicolor 2>/dev/null || true
+rm -f ~/.bin/ai-window.sh ~/.bin/alice-window.sh
+rm -f ~/.local/share/applications/alice-app.desktop ~/.local/share/applications/gigachat-app.desktop
+rm -f ~/.local/share/icons/hicolor/512x512/apps/alice_512.png ~/.local/share/icons/hicolor/512x512/apps/gigachat_512.png
+rm -f ~/.local/share/icons/hicolor/512x512/apps/chrome-ya.ru__alice-Default.png ~/.local/share/icons/hicolor/512x512/apps/chrome-giga.chat__-Default.png
+gtk-update-icon-cache -f -t ~/.local/share/icons/hicolor 2>/dev/null || true
 update-desktop-database ~/.local/share/applications 2>/dev/null || true
 ```
 
-‼️ Если хотите также удалить сохранённый профиль и кэш Алисы:
+‼️ Если хотите также удалить сохранённые профили и кэш:
 
 ```bash
-rm -rf ~/.config/alice-app
+rm -rf ~/.config/alice-app ~/.config/gigachat-app
 ```
