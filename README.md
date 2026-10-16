@@ -1,6 +1,9 @@
 # Яндекс Алиса для Linux (GNOME / Wayland) + YB
 
-<img width="256" height="256" alt="alice_512" src="https://github.com/user-attachments/assets/39f9c777-e156-4883-b5e8-adb223dd5000" />  
+<img width="256" height="256" alt="alice_512" src="https://github.com/user-attachments/assets/39f9c777-e156-4883-b5e8-adb223dd5000" />
+&nbsp;
+<img width="256" height="256" alt="gigachat_512" src="https://github.com/user-attachments/assets/30b18225-0259-40f8-a462-dce7ce2e0b26" />
+
 
 > "Автономный клиент" для голосового помощника и нейросети **Яндекс Алиса** на базе Яндекс Браузера без фонового агента с  интеграцией в GNOME и Wayland.
 
