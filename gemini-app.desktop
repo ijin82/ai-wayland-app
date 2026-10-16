@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Gemini
+Comment=Google Gemini как отдельное веб‑приложение
+Exec=ai-window.sh gemini
+Icon=gemini_512
+Terminal=false
+Categories=Utility;
+StartupWMClass=chrome-gemini.google.com__-Default

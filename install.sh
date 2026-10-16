@@ -6,8 +6,10 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 DESKTOP_FILE_ALICE="$SCRIPT_DIR/alice-app.desktop"
 DESKTOP_FILE_GIGACHAT="$SCRIPT_DIR/gigachat-app.desktop"
+DESKTOP_FILE_GEMINI="$SCRIPT_DIR/gemini-app.desktop"
 ICON_FILE_ALICE="$SCRIPT_DIR/icons/alice_512.png"
 ICON_FILE_GIGACHAT="$SCRIPT_DIR/icons/gigachat_512.png"
+ICON_FILE_GEMINI="$SCRIPT_DIR/icons/gemini_512.png"
 
 APP_DIR="$HOME/.local/share/applications"
 ICON_DIR="$HOME/.local/share/icons/hicolor/512x512/apps"
@@ -36,6 +38,9 @@ echo "✓ alice-app.desktop → $APP_DIR/ (с путём $BIN_DIR/ai-window.sh)"
 sed "s|^Exec=.*|Exec=$BIN_DIR/ai-window.sh gigachat|" "$DESKTOP_FILE_GIGACHAT" > "$APP_DIR/gigachat-app.desktop"
 echo "✓ gigachat-app.desktop → $APP_DIR/ (с путём $BIN_DIR/ai-window.sh)"
 
+sed "s|^Exec=.*|Exec=$BIN_DIR/ai-window.sh gemini|" "$DESKTOP_FILE_GEMINI" > "$APP_DIR/gemini-app.desktop"
+echo "✓ gemini-app.desktop → $APP_DIR/ (с путём $BIN_DIR/ai-window.sh)"
+
 # Копируем иконки
 cp "$ICON_FILE_ALICE" "$ICON_DIR/alice_512.png"
 echo "✓ alice_512.png → $ICON_DIR/"
@@ -43,12 +48,18 @@ echo "✓ alice_512.png → $ICON_DIR/"
 cp "$ICON_FILE_GIGACHAT" "$ICON_DIR/gigachat_512.png"
 echo "✓ gigachat_512.png → $ICON_DIR/"
 
+cp "$ICON_FILE_GEMINI" "$ICON_DIR/gemini_512.png"
+echo "✓ gemini_512.png → $ICON_DIR/"
+
 # Создаём копии/симлинки с именами Wayland app_id для прямого сопоставления mutter/gnome-shell
 cp "$ICON_FILE_ALICE" "$ICON_DIR/chrome-ya.ru__alice-Default.png"
 echo "✓ chrome-ya.ru__alice-Default.png → $ICON_DIR/"
 
 cp "$ICON_FILE_GIGACHAT" "$ICON_DIR/chrome-giga.chat__-Default.png"
 echo "✓ chrome-giga.chat__-Default.png → $ICON_DIR/"
+
+cp "$ICON_FILE_GEMINI" "$ICON_DIR/chrome-gemini.google.com__-Default.png"
+echo "✓ chrome-gemini.google.com__-Default.png → $ICON_DIR/"
 
 # Обновляем кэш иконок (флаг -t игнорирует отсутствие локального index.theme)
 if command -v gtk-update-icon-cache &>/dev/null; then
@@ -60,5 +71,5 @@ if command -v update-desktop-database &>/dev/null; then
   update-desktop-database "$APP_DIR" &>/dev/null || true
 fi
 
-echo "Готово. Алиса и Gigachat должны появиться в гриде приложений GNOME."
+echo "Готово. Алиса, Gigachat и Gemini должны появиться в гриде приложений GNOME."
 
